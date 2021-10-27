@@ -1,23 +1,197 @@
 const mockResponse = {
-    data: {
-        results: [
-            {
-                name: {
-                    first: "Laith",
-                    last: "Harb"
-                },
-                picture: {
-                    large: "https://randomuser.me/api/portraits/men/59.jpg"
-                },
-                login: {
-                    username: "ThePhonyGOAT"
-                }
-            }
-        ]
-    }
-}
-
+  data: {
+    results: [
+      {
+        gender: 'female',
+        name: { title: 'Mrs', first: 'Lily', last: 'Fortin' },
+        location: {
+          street: { number: 5864, name: 'Cedar St' },
+          city: 'Aylmer',
+          state: 'Nova Scotia',
+          country: 'Canada',
+          postcode: 'Z8A 4C2',
+          coordinates: { latitude: '-67.7859', longitude: '106.8868' },
+          timezone: {
+            offset: '+1:00',
+            description: 'Brussels, Copenhagen, Madrid, Paris',
+          },
+        },
+        email: 'lily.fortin@example.com',
+        login: {
+          uuid: 'b4979308-f44a-4432-9bf0-2aa09e9c55b8',
+          username: 'angrycat664',
+          password: 'worthy',
+          salt: 'prNspjMS',
+          md5: 'f2a4f39381c9b197384c2561c31207df',
+          sha1: 'd43c5dfac0ae01bea427a52b75b7b94040f1f3b2',
+          sha256:
+            '5d27d6f4804abfd28e230d6f193a8855b5228ccb2112a563e9885220a647fecd',
+        },
+        dob: { date: '1979-02-04T23:48:17.973Z', age: 42 },
+        registered: { date: '2003-03-18T13:15:16.576Z', age: 18 },
+        phone: '967-337-5096',
+        cell: '896-366-2982',
+        id: { name: '', value: null },
+        picture: {
+          large: 'https://randomuser.me/api/portraits/women/59.jpg',
+          medium: 'https://randomuser.me/api/portraits/med/women/59.jpg',
+          thumbnail: 'https://randomuser.me/api/portraits/thumb/women/59.jpg',
+        },
+        nat: 'CA',
+      },
+      {
+        gender: 'female',
+        name: { title: 'Miss', first: 'Iida', last: 'Salminen' },
+        location: {
+          street: { number: 9607, name: 'Siilitie' },
+          city: 'Pieksämäki',
+          state: 'Southern Savonia',
+          country: 'Finland',
+          postcode: 60367,
+          coordinates: { latitude: '-89.0771', longitude: '151.4484' },
+          timezone: { offset: '-11:00', description: 'Midway Island, Samoa' },
+        },
+        email: 'iida.salminen@example.com',
+        login: {
+          uuid: '9dfa5aa3-ed4f-4d07-947b-5d10fcad8582',
+          username: 'whitebutterfly816',
+          password: 'weston',
+          salt: 'tFiK2Yb3',
+          md5: '163b627a208ef79522e823d3dd1ada17',
+          sha1: '23f006dcbe9685bae0b43546f970ecdfc6c65c88',
+          sha256:
+            '3d874152c5eccb406ebb3dfcc3cae32a0f9e4132f102c373d70049e59794b5a1',
+        },
+        dob: { date: '1987-11-29T03:51:58.038Z', age: 34 },
+        registered: { date: '2005-10-09T17:18:11.760Z', age: 16 },
+        phone: '08-067-532',
+        cell: '042-512-56-44',
+        id: { name: 'HETU', value: 'NaNNA104undefined' },
+        picture: {
+          large: 'https://randomuser.me/api/portraits/women/27.jpg',
+          medium: 'https://randomuser.me/api/portraits/med/women/27.jpg',
+          thumbnail: 'https://randomuser.me/api/portraits/thumb/women/27.jpg',
+        },
+        nat: 'FI',
+      },
+      {
+        gender: 'male',
+        name: { title: 'Mr', first: 'Claudio', last: 'Küchler' },
+        location: {
+          street: { number: 7684, name: 'Kiefernweg' },
+          city: 'Anklam',
+          state: 'Sachsen',
+          country: 'Germany',
+          postcode: 27413,
+          coordinates: { latitude: '15.3181', longitude: '129.3118' },
+          timezone: {
+            offset: '+2:00',
+            description: 'Kaliningrad, South Africa',
+          },
+        },
+        email: 'claudio.kuchler@example.com',
+        login: {
+          uuid: 'd0efe1cc-34d0-49c8-9339-249a67308412',
+          username: 'organicwolf323',
+          password: 'wolfen',
+          salt: 'EpDGAPCw',
+          md5: '5fa896338cf0b710fc7e3704dc1be727',
+          sha1: 'b96ad9bd8ed7cc5114b368d99805aa80bd9eefa2',
+          sha256:
+            '082e608626cd745d8097cfeecb761b61b2a3edc07d85c024a45e3194db9347d3',
+        },
+        dob: { date: '1995-08-10T15:49:05.598Z', age: 26 },
+        registered: { date: '2015-07-15T23:29:02.422Z', age: 6 },
+        phone: '0476-6496800',
+        cell: '0177-7087595',
+        id: { name: '', value: null },
+        picture: {
+          large: 'https://randomuser.me/api/portraits/men/80.jpg',
+          medium: 'https://randomuser.me/api/portraits/med/men/80.jpg',
+          thumbnail: 'https://randomuser.me/api/portraits/thumb/men/80.jpg',
+        },
+        nat: 'DE',
+      },
+      {
+        gender: 'male',
+        name: { title: 'Mr', first: 'Johan', last: 'Johansen' },
+        location: {
+          street: { number: 4720, name: 'Kærbyvej' },
+          city: 'Rødvig Stevns',
+          state: 'Syddanmark',
+          country: 'Denmark',
+          postcode: 28589,
+          coordinates: { latitude: '0.9801', longitude: '3.6636' },
+          timezone: {
+            offset: '-1:00',
+            description: 'Azores, Cape Verde Islands',
+          },
+        },
+        email: 'johan.johansen@example.com',
+        login: {
+          uuid: 'c70c3737-86a7-45f9-b3fc-c7b9b6ead00b',
+          username: 'tinylion201',
+          password: 'santafe',
+          salt: 'wI1jnre5',
+          md5: '1ac309ca2841c34f18695104505605ff',
+          sha1: '9adfdbf27a78f4da04b9885388bafc802c9c1612',
+          sha256:
+            '1636bfd3fa4bdc8493c3ab963fda6c7c3d83de55507eb23a4034c62d92708c67',
+        },
+        dob: { date: '1951-09-22T17:53:01.698Z', age: 70 },
+        registered: { date: '2003-04-26T08:09:20.157Z', age: 18 },
+        phone: '75654403',
+        cell: '78483189',
+        id: { name: 'CPR', value: '220951-9457' },
+        picture: {
+          large: 'https://randomuser.me/api/portraits/men/48.jpg',
+          medium: 'https://randomuser.me/api/portraits/med/men/48.jpg',
+          thumbnail: 'https://randomuser.me/api/portraits/thumb/men/48.jpg',
+        },
+        nat: 'DK',
+      },
+      {
+        gender: 'female',
+        name: { title: 'Mrs', first: 'Lore', last: 'Escher' },
+        location: {
+          street: { number: 8919, name: 'Heideweg' },
+          city: 'Wunsiedel I. Fichtelgebirge',
+          state: 'Hamburg',
+          country: 'Germany',
+          postcode: 71148,
+          coordinates: { latitude: '37.8159', longitude: '-179.0414' },
+          timezone: {
+            offset: '+2:00',
+            description: 'Kaliningrad, South Africa',
+          },
+        },
+        email: 'lore.escher@example.com',
+        login: {
+          uuid: 'dc8f9566-4677-4be3-98d2-341ece81217b',
+          username: 'whiteelephant229',
+          password: 'vincent1',
+          salt: '55QYA2Wv',
+          md5: '37edd6ac48274aabc22af842f8bf8331',
+          sha1: '1a104764b95555fb20da9dcd0460eaf202f76d84',
+          sha256:
+            '991b3f544101b07bd47fbdf272fbd2677702eaa50479547a943fcbc88ef41850',
+        },
+        dob: { date: '1994-02-08T05:29:04.994Z', age: 27 },
+        registered: { date: '2008-03-10T22:20:49.866Z', age: 13 },
+        phone: '0930-5365830',
+        cell: '0176-0154749',
+        id: { name: '', value: null },
+        picture: {
+          large: 'https://randomuser.me/api/portraits/women/75.jpg',
+          medium: 'https://randomuser.me/api/portraits/med/women/75.jpg',
+          thumbnail: 'https://randomuser.me/api/portraits/thumb/women/75.jpg',
+        },
+        nat: 'DE',
+      },
+    ],
+  },
+};
 
 export default {
-    get: jest.fn().mockResolvedValue(mockResponse)
-}
+  get: jest.fn().mockResolvedValue(mockResponse),
+};
